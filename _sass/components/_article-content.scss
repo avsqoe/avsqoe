@@ -227,11 +227,11 @@
     background-color: white;
     margin: 0;
     padding: 0; 
-  }
+    }
   
     tr:nth-child(2n) {
     background-color: #f8f8f8; 
-  }
+    }
   
     tr th {
     font-weight: bold;
@@ -239,20 +239,21 @@
     text-align: left;
     margin: 0;
     padding: 6px 13px; 
-  }
+    }
   
-   tr td {
+    tr td {
     border: 1px solid #cccccc;
     text-align: left;
     margin: 0;
     padding: 6px 13px; 
-  }
+    }
   
     tr th :first-child, tr td :first-child {
     margin-top: 0; 
-  }
+    }
   
     tr th :last-child, tr td :last-child {
     margin-bottom: 0; 
-  }}
+    }
+  }
 }

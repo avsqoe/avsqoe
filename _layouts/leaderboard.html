@@ -1,0 +1,38 @@
+---
+layout: article
+type: leaderboard
+---
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#result').DataTable({
+            "paging":   false,
+            "info":     false
+        });
+    } );
+    </script>
+
+<table id="result">
+    {% for row in site.data.result %}   
+    <thead>  
+        {% if forloop.first %}      
+        <tr>
+        {% for pair in row %} 
+            <th>{{ pair[0] }}</th>
+        {% endfor %}
+        </tr> 
+        {% endif %}      
+    </thead>
+    {% endfor %}
+    <tbody>
+    {% for row in site.data.result %}
+        {% tablerow pair in row %}
+        {{ pair[1] }}
+        {% endtablerow %}  
+    {% endfor %}
+    </tbody>
+</table>
+

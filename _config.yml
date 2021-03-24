@@ -234,7 +234,7 @@ defaults:
   - scope:
       path: "qa_pages/en"
     values:
-      layout: page
+      layout: article
       nav_key: qa-en
       sidebar:
         nav: qa_pages-en
@@ -247,7 +247,7 @@ defaults:
   - scope:
       path: "qa_pages/cn"
     values:
-      layout: page
+      layout: article
       nav_key: qa-cn
       sidebar:
         nav: qa_pages-cn
