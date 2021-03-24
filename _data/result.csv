@@ -1,4 +1,4 @@
-First name,Last name,Age,Location
-John,Doe,35,United States
-Jane,Doe,29,France
-Jack,Hill,25,Australia
+Methods, FID, PSNR, Location
+1,22,333,United States
+2,33,222,France
+3,11,111,Australia
